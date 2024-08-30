@@ -5,7 +5,23 @@ function generateQRCode() {
     qrCodeContainer.innerHTML = '';
     new QRCode(qrCodeContainer, text);
     qrCodeContainer.style.display = 'block';
+    document.getElementById('download-btn').style.display = 'block';
 
+}
+
+function downloadQRCode() {
+    const qrCodeContainer = document.getElementById('qr-code').querySelector('img');
+    if (qrCodeContainer) {
+        const qrCodeURL = qrCodeContainer.src;
+        const link = document.createElement('a');
+        link.href = qrCodeURL;
+        link.download = 'qr-code.png';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    } else {
+        alert('No QR code found to download.');
+    }
 }
 
 const words = [
@@ -61,3 +77,5 @@ const wordflick = () => {
 document.addEventListener('DOMContentLoaded', () => {
     wordflick();
 });
+
+
