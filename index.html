@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="word"></h1>
+    <div class="input-container">
+        <input type="text" id="text-input" placeholder="Enter text here">
+        <button onclick="generateQRCode()">Generate QR Code</button>
+    </div>
+    <div id="qr-code"></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <span class="footer-text">
+                © 2024 
+                <a href="https://midu.dev/" class="footer-link">Nestyxd</a>
+                All rights reserved
+            </span>
+            <ul class="footer-links">
+                <li><a href="https://elvisxd.github.io/webside-curriculum/" class="footer-link">Portfolio</a></li>
+                <li><a id="contacto" href="mailto:elvisreyxd@gmail.com" class="footer-link">Contact me</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
