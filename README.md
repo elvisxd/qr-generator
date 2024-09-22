@@ -1,6 +1,6 @@
 # qr-generator
 qr-generator app in react + vite 
-live preview https://elvisxd.github.io/qr-generator/
+live preview https://qr-generator-pp31.vercel.app/
 
 
 <div align="center">
@@ -18,7 +18,7 @@ live preview https://elvisxd.github.io/qr-generator/
 <br>
 <h3 align="center">Weather App</h3>
 <div align="center">                                       
-<a href="https://elvisxd.github.io/qr-generator/" target="_blank"><img src="qr-generator.png" width="400" alt=""></a>
+<a href="https://qr-generator-pp31.vercel.app/" target="_blank"><img src="qr-generator.png" width="400" alt=""></a>
 <br>
 <p>
 <a href="https://github.com/elvisxd/qr-generator" target="_blank">
